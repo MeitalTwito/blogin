@@ -370,6 +370,7 @@ body.modal-open .main-modal {
     letter-spacing: 0.03em;
     line-height: 1.5384em;
     color: var(--footer-txt);
+    text-align: center;
 }
 
 small a {
