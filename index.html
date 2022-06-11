@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogin</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="main-screen" onclick="toggleMenu()"></div>
+    <div class="main-modal flex align-center justify-center">
+        <div class="modal-window flex align-center justify-center">
+            <div class="modal-content flex align-center space-between">
+                <button class="modal-btn close-btn" onclick="closeModal()">X</button>
+                <h2 class="modal-msg">Join us to get access to the latest stories!</h2>
+                <input class="modal-input" type="email" name="" id="" placeholder="Enter email adress to stay tuned">
+                <button class="modal-btn submit-btn" type="submit">submit</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header main-layout flex">
+        <div class="header-content content-layout flex align-center space-between">
+            <div class="logo main-logo">Blogin<span>.</span></div>
+            <ul class="main-nav flex clean-list">
+                <li class="active"><a href="#">Journal</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button onclick="toggleMenu()" class="menu-toggle">☰</button>
+        </div>
+    </header>
+    <main class="main-content content-layout flex">
+        <div class="card">
+            <img class="card-img" src="images/001.jpg" alt="">
+            <div class="card-content">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <div class="card-text">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</p>
+                </div>
+                <button onmouseover="onContinueReading(this)" onmouseout="offContinueReading(this)"
+                    onclick="openModal()" class="card-btn">Continue Reading</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="images/002.jpg" alt="">
+            <div class="card-content">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <div class="card-text">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</p>
+                </div>
+                <button onmouseover="onContinueReading(this)" onmouseout="offContinueReading(this)"
+                    onclick="openModal()" class="card-btn">Continue Reading</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="images/003.jpg" alt="">
+            <div class="card-content">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <div class="card-text">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</p>
+                </div>
+                <button onmouseover="onContinueReading(this)" onmouseout="offContinueReading(this)"
+                    onclick="openModal()" class="card-btn">Continue Reading</button>
+            </div>
+        </div>
+
+        <ul class="page-nav flex clean-list space-between align-center">
+            <li><a href="#"> <span>←</span> Previous</a></li>
+            <li><a href="#">Next →</a></li>
+        </ul>
+
+    </main>
+    <footer class="main-footer main-layout flex align-center">
+        <div class="footer-content content-layout flex align-center">
+            <div class="logo footer-logo">Blogin<span>.</span></div>
+            <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <a
+                    href="#">Pixelhint.com</a></small>
+
+            <ul class="footer-social clean-list flex">
+                <li class="facebook"><a href="#"><img src="images/facebook.svg" alt="twitter" srcset=""></a></li>
+                <li class="twitter"><a href="#"><img src="images/twitter.svg" alt="twitter" srcset=""></a></li>
+                <li class="be"><a href="#"><img src="images/BE.svg" alt="" srcset=""></a></li>
+                <li class="dribbble"><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px"
+                            height="14px">
+                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                d="M8.937,8.222 L8.937,8.222 C9.399,8.134 9.883,8.90 10.323,8.90 C10.961,8.90 11.577,8.179 12.259,8.332 C11.951,9.851 11.27,11.149 9.729,11.897 C9.575,10.643 9.333,9.411 8.937,8.222 ZM3.854,11.655 L3.854,11.655 C4.844,10.159 6.231,9.59 7.903,8.486 C8.299,9.719 8.585,11.39 8.695,12.381 C8.145,12.579 7.595,12.645 7.1,12.645 C5.878,12.645 4.822,12.293 3.854,11.655 ZM8.585,7.188 L8.585,7.188 C8.453,6.902 8.343,6.594 8.211,6.308 C9.333,5.802 10.433,5.98 11.423,4.262 C12.17,5.164 12.369,6.198 12.369,7.276 C11.665,7.100 10.983,6.990 10.323,6.990 C9.773,6.990 9.179,7.78 8.585,7.188 ZM10.719,3.426 L10.719,3.426 C9.795,4.218 8.805,4.856 7.749,5.318 C7.155,4.218 6.429,3.140 5.614,2.128 C6.76,1.996 6.517,1.930 7.1,1.930 C8.409,1.930 9.729,2.480 10.719,3.426 ZM6.759,5.714 L6.759,5.714 C5.328,6.242 3.854,6.484 2.402,6.484 C2.116,6.484 1.918,6.484 1.676,6.484 C1.962,4.768 3.40,3.316 4.536,2.524 C5.416,3.536 6.164,4.614 6.759,5.714 ZM7.1,0.851 L7.1,0.851 C3.436,0.851 0.576,3.734 0.576,7.276 C0.576,10.841 3.436,13.723 7.1,13.723 C10.565,13.723 13.448,10.841 13.448,7.276 C13.448,3.734 10.565,0.851 7.1,0.851 ZM7.551,7.474 L7.551,7.474 C5.724,8.90 4.140,9.279 3.62,10.907 C2.204,10.5 1.676,8.817 1.654,7.540 C1.918,7.540 2.160,7.584 2.402,7.584 C4.30,7.584 5.636,7.276 7.221,6.704 C7.309,6.946 7.419,7.232 7.551,7.474 Z" />
+                        </svg>
+                    </a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
