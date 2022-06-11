@@ -506,6 +506,10 @@ small a {
     .main-nav a:hover {
         color: var(--link-active);
     }
+
+    .main-footer small {
+        margin-inline: 20px;
+    }
 }
 
 
