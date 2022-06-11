@@ -28,17 +28,17 @@
 /* FONTFACE */
 @font-face {
     font-family: lato-bold;
-    src: url(fonts/lato/Lato-Bold.ttf);
+    src: url(../fonts/lato/Lato-Bold.ttf);
 }
 
 @font-face {
     font-family: lato-regular;
-    src: url(fonts/lato/Lato-Regular.ttf);
+    src: url(../fonts/lato/Lato-Regular.ttf);
 }
 
 @font-face {
     font-family: eurofurence;
-    src: url(fonts/eurofurence/eurof55.ttf);
+    src: url(../fonts/eurofurence/eurof55.ttf);
 }
 
 /* BASE */
